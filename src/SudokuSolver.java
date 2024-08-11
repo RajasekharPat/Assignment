@@ -436,7 +436,7 @@ public class SudokuSolver{
 		        while (sc.hasNextLine() && lineNo <= 9) {
 		        	String line = sc.nextLine();
 		            String[] cells = line.split(",");
-			    int colNo = 1;
+		            int colNo = 1;
 		            for(int i = 0; i<cells.length; i++) {
 			            int val = -1;
 			            try {
@@ -446,12 +446,12 @@ public class SudokuSolver{
 			            	e.printStackTrace();
 			            }
 			            if((val >= 0) && (val <= 9))
-				    {
+			            {
 			            	if(colNo <= 9){
-						vals.add(val);
-						colNo++;
-					}
-				    }
+			            		vals.add(val);
+			            		colNo++;
+			            	}
+			            }
 		            }
 		            lineNo++;
 		        }
